@@ -12,6 +12,6 @@ public class TopKFrequentElements {
         }
 
         return counterMap.entrySet().stream().sorted(Map.Entry.<Integer, Integer>comparingByValue()
-                .reversed()).limit(k).mapToInt(integerIntegerEntry -> integerIntegerEntry.getKey()).toArray();
+                .reversed()).limit(k).mapToInt(entry -> entry.getKey()).toArray();
     }
 }
