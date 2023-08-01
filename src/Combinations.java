@@ -12,7 +12,7 @@ class Solution {
 
     public static void helper(int i, List<Integer> currComb, List<List<Integer>> result, int n,int k){
         if(currComb.size() == k){
-            result.add(currComb);
+            result.add(new ArrayList<>(currComb));
             return ;
         }
 
